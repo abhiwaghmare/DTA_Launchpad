@@ -1,0 +1,38 @@
+Q: WHAT IS JSON?
+ANS: 	JSON stands for JavaScript Object Notation
+    	JSON is a lightweight format for storing and transporting data.
+	JSON is often used when data is sent from a server to a web page
+
+Q: WHAT IS HTTP STATUS CODES ?
+ANS:	HTTP status code is used for search engine optimization of how your pages get indexed, as well as how 	search engines perceive the health of your site
+
+	Status codes are grouped as follows:
+	Informational responses (100–199)
+	Successful responses (200–299)
+	Redirection messages (300–399)
+	Client error responses (400–499)
+	Server error responses (500–599)
+
+	
+Q: WHAT IS THE MEANING OF 500 STATUS CODES ?
+ANS:	The 500 HTTP Status Codes which means internal server error indicates that The server was unable to fulfill 	the request because of an unanticipated issue. In this case, the error message is a general “catch-all.” 	Typically, this implies that the server is unable to locate a more appropriate 5xx error code
+
+The HTTP Methods for HTTP 500 Status Codes are listed below.
+
+GET: The resource has been retrieved and is being sent in the message body.
+HEAD: The representation headers are included in the response, but no message body is included.
+POST: The resource describing the action’s outcome is transmitted in the message body.
+PUT: Replaces the uploaded content with all current representations of the target resource.
+TRACE: The message body contains the server’s response to the request message.
+
+
+Q: WHAT IS NOSQL DATABASES ?
+ANS:	NoSQL databases (aka "not only SQL") are non-tabular databases and store data differently than relational tables. NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. They provide flexible schemas and scale easily with large amounts of data and high user loads.
+
+Document databases store data in documents similar to JSON (JavaScript Object Notation) objects. Each document contains pairs of fields and values. The values can typically be a variety of types including things like strings, numbers, booleans, arrays, or objects.
+
+Key-value databases are a simpler type of database where each item contains keys and values.
+
+Wide-column stores store data in tables, rows, and dynamic columns.
+
+Graph databases store data in nodes and edges. Nodes typically store information about people, places, and things, while edges store information about the relationships between the nodes.
