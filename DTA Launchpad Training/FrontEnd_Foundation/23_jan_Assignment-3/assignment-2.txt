@@ -1,0 +1,12 @@
+Q:How to display images in title bar ?
+Ans: 
+
+
+Q:What is the purpose of "alt" attribute in image tag ?
+Ans: The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+
+Q:Why do we use tbody,thead,tfoot ?
+Ans: The <tfoot> tag is used to group footer content in an HTML table.
+The <tfoot> element is used in conjunction with the <thead> and <tbody> elements to specify each part of a table (footer, header, body).
+
