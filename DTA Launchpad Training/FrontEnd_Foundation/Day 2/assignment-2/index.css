@@ -1,0 +1,22 @@
+li{
+    border: 2px solid black;
+    text-align: center;
+    padding:10px;
+    margin:20px;
+    list-style: none;
+}
+
+.salesdept{
+    background-color: #ea7988;
+}
+
+.other{
+    background-color:blue;
+    color:white;
+}
+
+.container{
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}

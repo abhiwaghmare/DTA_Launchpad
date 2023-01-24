@@ -1,0 +1,30 @@
+h1{
+    background-color: #ea7988;
+    border: 2px solid black;
+}
+
+.initial{
+font-size: 60px;
+color:red;
+padding-left: 50px;
+}
+
+table{
+    width: 100%;
+    border:2px solid grey;
+    margin: 20px;
+}
+
+table tr:hover{
+    background-color: rgb(51, 51, 239);
+}
+
+
+th{
+    text-decoration: underline;
+    background-color: green;
+}
+
+tr:nth-child(odd){
+    background-color: rgb(227, 227, 227);
+}
