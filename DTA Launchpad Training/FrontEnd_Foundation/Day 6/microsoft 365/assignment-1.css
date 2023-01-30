@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+    text-shadow: 5px 5px 5px orange;
+}
+
+#initial{
+    font-size: 70px;
+    color: blue;
+    font-style: italic;
+}
+
+#para p{
+    word-spacing: 40px;
+    letter-spacing: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    text-shadow: 5px 5px 5px orange;
+}
+
+#footer p{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    word-spacing: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    text-shadow: 5px 5px 5px orange;
+}

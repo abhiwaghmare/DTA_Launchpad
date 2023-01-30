@@ -1,0 +1,26 @@
+#container{
+    align-items: center;
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+#img1{
+    border-bottom-right-radius: 15%;
+}
+
+#img2{
+    border-bottom-left-radius: 15%;
+}
+
+#img3{
+    border-top-right-radius: 15%;
+}
+
+#img4{
+    border-top-left-radius: 15%;   
+}

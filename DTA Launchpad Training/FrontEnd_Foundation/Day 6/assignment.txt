@@ -1,0 +1,7 @@
+Q1:Can we apply more than one css class to html tag ?
+Ans: Yes we can apply more than one class to html tag.
+	<tag_name class="class1 class2">
+
+Q2:How to hide an element using CSS?
+Ans:    visibility:hidden
+	opacity:0
