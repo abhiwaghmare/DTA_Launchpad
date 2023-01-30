@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ImageMap.css">
+    <title>ImageMap</title>
+</head>
+<body onmousemove="coordinate(event)">
+    <img src="ImageMap_Task.png" alt="imagemap" usemap="#workmap"/>
+
+    <map name="workmap">
+        <area shape="rect" coords="8,8,166,205" href="https://jquery.com/" alt="">
+        <area shape="rect" coords="166,8,392,205" href="https://angular.io/" alt="">
+        <area shape="rect" coords="392,8,588,205" href="https://getbootstrap.com/" alt="">
+    </map>
+</body>
+<script>
+    function coordinate(event) {
+        var x=event.clientX;
+        var y=event.clientY;
+        document.getElementById("X").value=x;
+        document.getElementById("Y").value=y;
+    }
+</script>
+</html>
