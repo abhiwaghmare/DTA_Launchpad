@@ -1,0 +1,22 @@
+.container{
+    border: 2px solid black;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.button-group{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.row label{
+    font-weight: bold;
+}
+

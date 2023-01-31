@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid blue;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.row label{
+    color: red;
+}
+
+.button-group{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+

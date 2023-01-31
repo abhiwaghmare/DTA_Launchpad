@@ -1,0 +1,21 @@
+.container{
+    border: 2px solid black;
+}
+
+.container h1{
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: 10px solid grey;
+    color: grey;
+    height: 50px;
+  }
+
+  form{
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    padding: 10px;
+    margin: 10px;
+  }
