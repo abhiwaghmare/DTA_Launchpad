@@ -1,0 +1,36 @@
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.emp{
+    border: 2px solid black;
+    background-color: powderblue;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 25%;
+    height: 200px;
+    flex: 30%;
+
+}
+
+.emp img{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (max-width:500px) {
+    .emp{
+        flex:100%;
+        max-width:100%;
+    }
+    
+}
