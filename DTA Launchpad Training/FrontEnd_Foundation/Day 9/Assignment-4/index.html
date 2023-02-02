@@ -1,0 +1,88 @@
+<html>
+  <head></head>
+
+  <body>
+    <h3>Storing User Preferences in LocalStorage</h3>
+    <hr />
+
+    <fieldset>
+      <legend>User Preferences</legend>
+
+      User Id : <input type="text" value="Scott" id="uid" name="uid" />
+      <br /><br />
+
+      User Email :
+      <input type="text" value="scott@gmail.com" id="email" name="email" />
+      <br /><br />
+
+      Security Token :
+      <input type="text" value="ADF989DF98DS9F8" id="token" name="token" />
+      <br /><br />
+
+      <input type="button" value="Save User Data" onclick="fn_saveData()" />
+      <input type="button" value="Delete User Data" onclick="fn_deleteData()" />
+      <input type="button" value="Clear Fields" onclick="fn_clearFields()" />
+    </fieldset>
+
+    <br /><br />
+
+    <fieldset>
+      <input type="button" value="get Data" onclick="fn_getData()" />
+
+      <p id="p1"></p>
+    </fieldset>
+
+    <script>
+
+      function fn_saveData() {
+        // 1.  Get data from input fields
+        var txtUidObj = document.getElementById("uid");
+        var txtEmailObj = document.getElementById("email");
+        var txtTokenObj = document.getElementById("token");
+
+        // 2.  Create object with input fields values
+        var userObj = {};
+        userObj.uid = txtUidObj.value;
+        userObj.email = txtEmailObj.value;
+        userObj.token = txtTokenObj.value;
+        // 	alert(userObj);
+
+        // 3. Convert the object into JSON string
+        var str = JSON.stringify(userObj);
+        //		alert(str);
+
+        // 4.  Store the string in localStorage
+        localStorage.setItem("userData", str);
+
+        alert("User details are stored in localStorage");
+        fn_getData();
+      }
+
+      function fn_getData() {
+        // 1.  Reading data from localStorage
+        var str = localStorage.getItem("userData");
+
+        var paraObj = document.getElementById("p1");
+        paraObj.innerHTML = str;
+
+        // 2.  Convert JSON string into object
+        var userObj = JSON.parse(str);
+
+        // 3.  Access html elements to display user data
+
+        if (str == null) {
+          alert("There is no user data in localStorage");
+          return; //  exit from the function
+        }
+
+        var txtUidObj = document.getElementById("uid");
+        var txtEmailObj = document.getElementById("email");
+        var txtTokenObj = document.getElementById("token");
+
+        txtUidObj.value = userObj.uid;
+        txtEmailObj.value = userObj.email;
+        txtTokenObj.value = userObj.token;
+      }
+    </script>
+  </body>
+</html>
