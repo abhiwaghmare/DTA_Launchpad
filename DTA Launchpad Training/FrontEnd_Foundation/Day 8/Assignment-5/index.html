@@ -1,0 +1,45 @@
+<!-- Draw the shapes using canvas tag -->
+<!DOCTYPE html>
+<html  >
+	<head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <title>Canvas</title>
+    </head>
+	<body>
+	<h3>Graphics in HTML5 - Using Canvas </h3>
+		<hr/>	 
+		
+		<input type="button"  onclick="fn_drawGraphics()"  value="Draw Graphics" />
+		<br/> <br/>
+		
+		<canvas  id="canvas1"  width="300"  height="300"  style="border:2px solid red;">
+		</canvas>
+		
+		<script>		 		
+			function  fn_drawGraphics()
+			{
+				var  c1 =  document.getElementById("canvas1");
+				var ctx  =  c1.getContext("2d");
+				
+				var x = 10,  y = 290, h = 20 ,  w = 30;
+				
+				var  arr = [ -280,-40,-150,-260,-60,-190,-100];
+				
+				for(var i = 0;  i <  arr.length; i++)
+				{
+					h = arr[i];
+					ctx.beginPath();
+					ctx.fillStyle = "red";
+					ctx.fillRect(x,y, w, h);
+					x =  x +  40;					 
+				}
+				
+			
+								 
+			}
+		</script>				
+	</body>	
+</html>

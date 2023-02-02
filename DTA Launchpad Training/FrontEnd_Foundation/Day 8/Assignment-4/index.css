@@ -1,0 +1,9 @@
+.container{
+    margin: 10px;
+}
+
+.container-item > img{
+    width: 280px;
+    height: 350px;
+    background-color: azure;
+}
