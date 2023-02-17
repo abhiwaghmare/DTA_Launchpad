@@ -1,0 +1,46 @@
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-color: rgb(241, 178, 241);
+  border: 1px solid black;
+  font-size: 40px;
+}
+
+.box {
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px;
+  text-align: right;
+}
+
+.box-s1 {
+  font-size: 15px;
+  color: red;
+}
+
+.box-s2 {
+  font-size: 30px;
+  color: red;
+}
+
+.box-s3 {
+  font-size: 45px;
+  color: red;
+}
+
+.box-s4 {
+  font-size: 60px;
+  color: lime;
+}
+
+.box-s5 {
+  font-size: 75px;
+  color: lime;
+}
+
+.box-s6 {
+  font-size: 90px;
+  color: lime;
+}/*# sourceMappingURL=MyStyles.css.map */

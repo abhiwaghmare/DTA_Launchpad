@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <style>
+        table, th, td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>JavaScript Programming -- Arrays </h3>
+    <hr />
+
+    <input type="button" value="Get Data" onclick="fn_getData()" />
+    <br><br>
+    <table id="list1">
+    </table>
+
+
+    <script>
+        function fn_getData() {
+            var techArray = ["HTML5", "CSS3", "Bootstrap", "ReactJS", "AngularJS", "VueJS"];
+            var lstObj = document.getElementById("list1");
+            var  count = 1;
+            techLength = techArray.length;
+			  
+				function  fn_getData()
+				{
+						if(  count == techLength  )
+						{
+							 count = 0;
+						}
+						let sid = parseInt(count) + 1;
+                        lstObj.innerHTML += "<tr><td>"+ sid + "</td><td>"+ techArray[count] + "</td></tr>";
+                        count++;	
+				}  
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

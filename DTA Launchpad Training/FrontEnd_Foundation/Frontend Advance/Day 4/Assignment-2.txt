@@ -1,0 +1,15 @@
+find() :
+Ans:
+The Javascript arr.find() method in Javascript is used to get the value of the first element in the array that satisfies the provided condition. It checks all the elements of the array and whichever the first element satisfies the condition is going to print. This function will not work function having the empty array elements, and also does not change the original array.
+SYNTAX: array.find(function(currentValue, index, arr),thisValue);
+
+findIndex():
+Ans:
+The Javascript Array.findIndex() method is used to return the first index of the element in a given array that satisfies the provided testing function (passed in by the user while calling). Otherwise, if no data is found then the value of -1 is returned.
+
+It does not execute the method once it finds an element satisfying the testing method.
+It does not change the original array.
+
+filter():
+Ans:
+The filter() method basically outputs all the element object that pass a specific test or satisfies a specific function. The return type of the filter() method is an array that consists of all the element(s)/object(s) satisfying the specified function

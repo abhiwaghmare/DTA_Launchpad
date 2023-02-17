@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="list1" style="border:2px solid blue">
+        <tr style="background-color: aqua;">
+            <th>Course</th>
+            <th>Course</th>
+            <th>Course</th>
+            <th>Course</th>
+        </tr>
+    </table>
+
+
+    <script>
+            var marksArray = ["HTML5", "CSS3", "Bootstrap", "Jquery", "AngularJS"];
+            var lstObj = document.getElementById("list1");
+            var arrCount = 0;
+            var i = 0;
+            var j = 0;
+
+            for (i;i<4;i++) {
+                lstObj.innerHTML  += "<tr id=" + i + "></tr>"
+                for(j=0;j<4;j++){
+                    if(i==3 && j==3){
+                        break;
+                    }
+                    document.getElementById(i).innerHTML += "<td>" + marksArray[arrCount] + "</td>"
+                    arrCount++;
+                    if(arrCount ==5){
+                        arrCount = 0;
+                    }
+                }
+
+            }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

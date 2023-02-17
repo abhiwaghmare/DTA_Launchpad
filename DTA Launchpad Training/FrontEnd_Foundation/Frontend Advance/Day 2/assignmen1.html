@@ -1,0 +1,27 @@
+
+    <html>
+	<head></head>
+	<body>
+		<h3>JavaScript Programming -- DOM </h3>
+		<hr/>
+		
+		<input type="text"  id="t1"  value="10"  />		
+		<input type="text"  id="t2"  value="20"  />		
+
+		<p id="p1">value1: </p>
+        <p id="p2">value2: </p>
+        <p id="p3"> sum: </p>
+		
+		<script>
+		var readinput1 = document.getElementById("t1")
+        var readinput2 = document.getElementById("t2")
+        var addvalue1 = document.getElementById("p1")
+        var addvalue2 = document.getElementById("p2")
+        var addvalue3 = document.getElementById("p3")
+        addvalue1.innerHTML += readinput1.value;
+		addvalue2.innerHTML += readinput2.value;
+        addvalue3.innerHTML += parseInt(readinput1.value) + parseInt(readinput2.value);
+        </script>
+		
+	</body>
+</html>

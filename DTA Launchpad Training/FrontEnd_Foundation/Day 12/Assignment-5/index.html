@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Modal</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script type= "text/javascript">
+        function login() {
+        var user = document.getElementById("exampleInputEmail1").value;
+        var pass = document.getElementById("exampleInputPassword1").value;
+        if(user == "user@gmail.com" && pass == "pass") {
+            window.location.href = "welcome.html";
+            return false;
+        } else {
+            alert("wrong email/password");
+            return false;
+            }
+        }
+        </script>
+</head>
+
+<body>
+    <div class="container  text-center border   m-2">
+        <h1 class="display-4 py-2" style="text-align: center; background-color: rgb(17, 17, 48); color: white;">Modal
+            Demo Page</h1>
+    </div>
+
+    <!-- Button used to  trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#div1">
+        Show Login
+    </button>
+
+    <!-- Modal -->
+    <div class="modal" id="div1">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body  text-primary">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                      </form>
+                </div>
+
+                <!-- Modal Footer  -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" onclick="login()" class="btn btn-primary">Login</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

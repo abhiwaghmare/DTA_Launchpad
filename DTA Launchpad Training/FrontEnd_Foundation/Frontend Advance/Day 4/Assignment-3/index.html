@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <style>
+        h3{
+            color: red;
+        }
+        .item1{
+            border: 1px solid black;
+            background-color: beige;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Javascript Assignment-3</h2>
+
+    <div class="item1">
+    <h3>Find count of Even No.:</h3>
+    <input type="button"  value="Count Even No."  onclick="fn_evenNo()" />
+    <p>Total Even No: <span id="getEven"></span></p>
+    </div>
+
+    <div class="item1">
+    <h3>Find X power Y:</h3>
+    <input type="number" id="num1" placeholder="X value">
+    <input type="number" id="num2" placeholder="Y value">
+    <br><br>
+    <input type="button"  value="Ans"  onclick="fn_power()" />
+    <p>Ans: <span id="getPow"></span></p>
+    </div>
+
+    <div class="item1">
+    <h3>Count words in string:</h3>
+    <input type="text" id="myStr" placeholder="Enter String">
+    <br><br>
+    <input type="button"  value="words"  onclick="fn_words()" />
+    <p>Ans: <span id="getWords"></span></p>
+    </div>
+</body>
+
+<script>
+    var arr =  [14,29,37,42,55,26,79,92,34,23,13,52];
+    function fn_evenNo(){
+        var newArr = arr.filter(ele => ele%2==0);
+        var evenCnt = newArr.length;
+        var evenObj = document.getElementById("getEven");
+        evenObj.innerHTML = evenCnt;
+    }
+
+    function fn_power(){
+        var getX = document.getElementById("num1").value;
+        var getY = document.getElementById("num2").value;
+        var powAns = Math.pow(getX,getY);
+        var powerObj = document.getElementById("getPow");
+        powerObj.innerHTML = powAns;
+
+    }
+
+    function fn_words(){
+        var getStr = document.getElementById("myStr").value;
+        var splitWords = getStr.split(" ");
+        var countWords = splitWords.length;
+        var wordsObj = document.getElementById("getWords");
+        wordsObj.innerHTML = countWords;
+
+    }
+</script>
+</html>

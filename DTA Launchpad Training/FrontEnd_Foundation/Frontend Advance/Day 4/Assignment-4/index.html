@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <style>
+        h3{
+            color: red;
+        }
+        .item1{
+            border: 1px solid black;
+            background-color: beige;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h2>Javascript Assignment- 4</h2>
+
+
+    <div class="item1">
+    <h3>Convert to Uppercase</h3>
+    <input type="button" class="btn1" value="Uppercase"  onclick="event_upper()" />
+    <p>Uppercase city names: <span id="getcities"></span></p>
+    </div>
+
+    <div class="item1">
+    <h3>First 3 characters</h3>
+    <input type="button" class="btn1"  value="Result"  onclick="event_slice()" />
+    <p>First 3 Elements: <span id="getsliced"></span></p>
+    </div>
+
+    <div class="item1">
+    <h3>Replace a with @</h3>
+    <input type="button" class="btn1"  value="Result"  onclick="event_replace()" />
+    <p>Replaced Elements: <span id="getReplaced"></span></p>
+    </div>
+
+    <script>
+        var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+
+        function event_upper(){
+
+        function fn_upper(city){
+            return city.toUpperCase();
+        }
+
+        var newArr = citiesArray.map(fn_upper)
+        var citiesObj = document.getElementById("getcities");
+        citiesObj.innerHTML = newArr;
+    }
+
+    function event_slice(){
+        var slicedArr = citiesArray.map(function fn_slice(n){
+            return n.slice(0,3)
+        })
+        var slicedObj = document.getElementById("getsliced");
+        slicedObj.innerHTML = slicedArr;
+    }
+
+    function event_replace(){
+        var replacedArr = citiesArray.map(n => n.replaceAll('a','@'))
+        var replacedObj = document.getElementById("getReplaced");
+        replacedObj.innerHTML = replacedArr;
+    }
+    </script>
+</body>
+</html>

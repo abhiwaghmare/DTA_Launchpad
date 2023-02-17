@@ -1,0 +1,40 @@
+.header-box
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: rgb(241, 178, 241);     
+    border: 1px solid black;
+    font-size: 40px;
+}
+
+.box
+{
+    font-size: 15px;
+    padding : 10px;
+    margin : 5px;   
+    text-align: right;   
+}
+
+
+$font : 15px;
+
+@for $i from 1 to 7
+{ 
+    .box-s#{$i}
+    {
+        font-size :  $font * $i;
+
+        @if($i <= 3)
+        {
+            color: red;
+        }
+        @else
+        {
+            color: lime;
+        }
+        
+
+    }
+}

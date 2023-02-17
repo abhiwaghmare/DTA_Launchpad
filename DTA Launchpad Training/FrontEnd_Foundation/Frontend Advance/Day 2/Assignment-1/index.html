@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type= "text/javascript">
+        function login() {
+        var user = document.getElementById("InputUserName").value;
+        var pass = document.getElementById("InputPassword1").value;
+        var msgToUser = document.getElementById("reply");
+        if(user == "abhishek" && pass == "pass") {
+            msgToUser.innerHTML = "Welcome to our website " + user;
+            msgToUser.style.color = "green";
+            return false;
+        } else {
+            msgToUser.innerHTML = "Invalid credentials"
+            msgToUser.style.color = "red";
+            return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h3>Javascript Programming</h3>
+        <form class="main-form" style="border: 2px solid black; padding: 10px;">
+            <div class="form-group">
+              <label for="InputUserName">Username</label>
+              <input type="name"  id="InputUserName" placeholder="Enter Username">
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label for="InputPassword1">Password</label>
+              <input type="password" id="InputPassword1" placeholder="Password">
+            </div>
+            <div class="footer" style="margin-top: 10px;">
+                <button type="button" onclick="login()" class="btn btn-primary">Login</button>
+            </div>
+            <div class="msg">
+                <p id="reply"></p>
+            </div>
+          </form>
+    </div>
+</body>
+</html>

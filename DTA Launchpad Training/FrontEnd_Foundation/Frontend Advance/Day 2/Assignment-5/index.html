@@ -1,0 +1,58 @@
+<html>
+
+<head></head>
+
+<body>
+    <h3>JavaScript Programming -- Control Structures </h3>
+    <hr />
+
+    Select City Code :
+    <select id="s1">
+        <option>HYD</option>
+        <option>BLR</option>
+        <option>MUM</option>
+        <option>GUR</option>
+    </select>
+
+    <input type="button" value="Get Branch Details" onclick="fn_getData()" />
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <img id="p3" src="" alt="">
+    </fieldset>
+    <script>
+        function fn_getData() {
+            var p1Obj = document.getElementById("p1");
+            var p2Obj = document.getElementById("p2");
+            var p3Obj = document.getElementById("p3");
+            var selectObj = document.getElementById("s1");
+
+
+            switch (selectObj.value) {
+                case "HYD": p1Obj.innerHTML = "You have selected Hyderabad Branch";
+                    p2Obj.innerHTML = "Address: Meenakshi Tech park, Survey No. 39 Gachibowli Hyderabad, Telangana";
+                    p3Obj.src = "https://qph.fs.quoracdn.net/main-qimg-4a1971dbd98a3bcb9fa0913fab372f7d";
+                    break;
+
+                case "BLR": p1Obj.innerHTML = "You have selected Bangalore Branch";
+                    p2Obj.innerHTML = "Address: Block A, Level 7, 77 Degree Town Center, Survey No. 124 and 36 / 2 Ammani Bellandur Khane Village Varthur Hobli, Bangalore East Taluk Bengaluru, Karnataka";
+                    p3Obj.src = "https://data1.ibtimes.co.in/cache-img-0-450/en/full/637921/1541845518_deloitte.jpg";
+                    break;
+
+                case "MUM": p1Obj.innerHTML = "You have selected Mumbai Branch";
+                    p2Obj.innerHTML = "Address: Fairmont, Level 1, 2, 4 and 5 Hiranandani Business Park Powai Mumbai, Maharashtra";
+                    p3Obj.src = "https://th.bing.com/th/id/OIP.pmnOS6tEPP_9Q_Dzax8B0AAAAA?w=244&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7";
+                    break;
+
+                case "GUR": p1Obj.innerHTML = "You have selected Gurgaon Branch";
+                    p2Obj.innerHTML = "Address: Crest, I-Park, Level Ground to 7 Plot No. 15 Udyog Vihar Phase IV Gurgaon, Haryana";
+                    p3Obj.src = "https://th.bing.com/th/id/OIP.nNNoLI0BAJtJqbYNNE5rhQHaFL?w=257&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7";
+                    break;
+            }
+
+
+        }		
+    </script>
+
+</body>
+
+</html>

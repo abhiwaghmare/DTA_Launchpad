@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type= "text/javascript">
+        function getTotal() {
+        var productName = document.getElementById("pName").value;
+        var productPrice = document.getElementById("price").value;
+        var productQuntity = document.getElementById("quantity").value;
+        var msgToUser = document.getElementById("reply");
+        var totalPrice = parseInt(productPrice) * parseInt(productQuntity)
+        msgToUser.innerHTML += totalPrice;
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Product Price Calculation</h3>
+        <form class="main-form" style="border: 2px solid black; padding: 10px;">
+            <div class="form-group">
+              <label for="pName">Product Name: </label>
+              <input type="text"  id="pName" placeholder="Enter Product name">
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label for="price">Unit price: </label>
+              <input type="Number" id="price" placeholder="Enter Price">
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+                <label for="quantity">Quantity: </label>
+                <input type="number" id="quantity" placeholder="Enter Quantity">
+              </div>
+            <div class="footer" style="margin-top: 10px;">
+                <button type="button" onclick="getTotal()" class="btn btn-primary">Total Amount</button>
+            </div>
+            <div class="msg">
+                <h4 id="reply">Result: </h4>
+            </div>
+          </form>
+    </div>
+</body>
+</html>

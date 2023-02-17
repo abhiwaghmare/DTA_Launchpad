@@ -1,0 +1,19 @@
+Q1:How to add or remove class to html using javascript?
+Ans:
+Add classes:
+	const el = document.getElementsByClassName('metaClass')
+	el.classList.add("wrapper", "nested", "child");
+Remove classes:
+	const el = document.getElementsByClassName('metaClass')
+	el.classList.remove("wrapper", "nested", "child");
+
+
+Q2: What is CDN and why is it used ?
+Ans:
+	A content delivery network (CDN) is a group of servers spread out over a region or around the world that work together to speed up content delivery on the web. The servers in a CDN temporarily store (or cache) webpage content like images, HTML, JavaScript, and video. They send the cached content to users who load the webpage. Today, almost all websites and applications rely on a CDN to help serve content to their users.
+
+Web applications use CDNs largely because they offer four important benefits: better performance, increased reliability, cost savings, and resilience against cyber attacks.
+
+Q3: 
+
+

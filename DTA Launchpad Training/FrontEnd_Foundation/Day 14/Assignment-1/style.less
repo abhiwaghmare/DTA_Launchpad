@@ -1,0 +1,65 @@
+// This is main Style File
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: lightyellow;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+  }
+
+.navlinks>a
+    {
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+  
+
+// Mixin with parameters
+.theme (@themeColor,@width,@height,@radius)
+{
+    border: 2px solid @themeColor;
+    width: @width;
+    height: @height;
+    color : @themeColor;
+    border-radius: @radius;   
+  }
+
+  
+.img1
+{    
+    .theme(purple,300px, 200px, 0px)
+}
+
+.img2
+{    
+    .theme(Red,200px, 200px, 0px)
+}
+
+.img3
+{    
+    .theme(Blue,200px, 200px, 200px)
+}
+
+
+
+
+@import url(/partial.css);
+
+.btn{
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+
+.newBtns{
+    &:extend(.btn);
+    background-color: black;
+    color:white;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <form   id="form1"   name="form1"  
+        onsubmit="fn_submitData()"   
+        action="login.php"   method="get">			
+    
+    Customer Name  :  <input  type="text"  id="name"   autofocus   />  
+    <span id="error" class="error">*</span>
+    
+    <br/><br/>
+    
+    Source Station  :  <input type="text"  id="sstn" name="sstn"  />    
+    <!-- <span id="sp1" class="error"></span>					 -->
+    <br/><br/>
+    
+    Destination Station  :  <input type="text"  id="dstn" name="dstn"  />      
+    <span id="sp2" class="error"></span>
+    <br/><br/>
+    
+    Contact No.  :  <input type="number"  id="cno" name="cno"  />      
+    <span id="sp3" class="error"></span>
+    <br/><br/>
+    
+    Email :  <input type="email"  id="email" name="email"  />      
+    <span id="sp4" class="error"></span>
+    <br/><br/>
+    
+    <input  type="submit"  value="Submit"  />		
+    </form>
+
+    </fieldset>
+
+
+<script>
+    function fn_submitData(){
+        event.preventDefault()
+        console.log("str");
+        var txtnameobj = document.getElementById("name");
+        var txtsstnobj = document.getElementById("sstn");
+        var txtdstnobj = document.getElementById("dstn");
+        var txtcnoobj = document.getElementById("cno");
+        var txtemailobj = document.getElementById("email");
+
+
+        var spnameerror = document.getElementById("error")
+        var spdstnerror = document.getElementById("sp2")
+        var spcnoerror = document.getElementById("sp3")
+        var spemailerror = document.getElementById("sp4")
+
+        spnameerror.innerHTML ="";
+        spdstnerror.innerHTML ="";
+        spcnoerror.innerHTML ="";
+        spemailerror.innerHTML ="";
+
+        var isformvalid = true;
+
+        if(txtnameobj.value.length == 0){
+            spnameerror.innerHTML = "Customer Name is Required"
+            isformvalid = false;
+        }
+        if(txtsstnobj.value == txtdstnobj.value){
+            spdstnerror.innerHTML = "Destination and source station should not be same"
+            isformvalid = false;
+        }
+        if(txtcnoobj.value.length > 10){
+            spcnoerror.innerHTML = "Required, should have 10 digits only"
+            isformvalid = false;
+        }
+        if(txtemailobj.value.length == 0){
+            spemailerror.innerHTML = "Required"
+            isformvalid = false;
+        }
+        if(isformvalid == false)
+					 {
+							event.preventDefault();
+					 }
+
+
+
+
+    }
+</script>
+</body>
+</html>
